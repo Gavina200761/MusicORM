@@ -15,6 +15,11 @@ A RESTful API for managing a music library built with Node.js, Express.js, and S
    cp .env.example .env
    ```
 
+   Environment variables in `.env`:
+   - `NODE_ENV` (`development` or `production`)
+   - `DEV_DB_DIALECT`, `DEV_DB_STORAGE`, `DEV_DB_LOGGING`
+   - `PROD_DB_DIALECT`, `PROD_DB_STORAGE`, `PROD_DB_LOGGING`
+
 4. Set up the database:
    ```bash
    node database/setup.js
